@@ -1,0 +1,1538 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sacramento');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    width: initial;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll-up-btn{
+    position:fixed;
+    height:45px;
+    width:42px;
+    background:#9B3D3D;
+    right:30px;
+    bottom:30px;
+    text-align:center;
+    line-height:45px;
+    color:#fff;
+    z-index: 9999;
+    font-size:30px;
+    border-radius: 6px;
+    cursor:pointer;
+    opacity:0;
+    pointer-events:none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    bottom:30px; 
+}
+.max-width{
+    max-width:1300px;
+    padding:0 80px;
+    margin:auto;
+}
+.navbar{
+    position:fixed;
+    padding:15px 0;
+    width:100%;
+    transition: all 0.3s ease;
+    z-index:999;
+
+}
+.navbar.sticky{
+    padding:15px 0;
+    background:#9B3D3D;
+}
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size:40px;
+    font-weight:600;
+    color:#fff;
+  
+
+}
+.navbar .logo a span{
+    color:#9B3D3D;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color:#fff;
+}
+.navbar .menu li{
+    list-style:none;
+    display:inline-block;
+}
+.navbar .menu li a {
+    color:#fff;
+    font-size:20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight:500;
+    margin-left:25px;
+    transition:.3s ease; 
+}
+.navbar .menu li a:hover{
+color:#9B3D3D;
+}
+.navbar.sticky .menu li a:hover{
+    color:#2f2f2f;
+}
+.btn-menu{
+    color:#fff;
+    font-size:23px;
+    cursor:pointer;
+    display:none;
+}
+.center {
+  display: block;
+  float:right;
+  width: 100%;
+height:100%;
+}
+.home{
+    display:flex;
+background-color:black;
+    background-size:cover;
+    height:100vh;
+    color:#9b2335;
+}
+.home .max-width{
+    margin: auto 0 auto 0px;
+}
+.home .home-content .text1{
+    font-size:27px;
+
+
+}
+.home .home-content .text2{
+    font-size:75px;
+    font-weight:600;
+    margin-left:0px;
+
+}
+.home .home-content .text3{
+    font-size:40px;
+    margin:5px 0;
+
+}
+
+.home .home-content .text3 span{
+color:#fff;
+font-weight:500;    
+
+}
+.home .home-content a{
+    display:inline-block;
+    color:#fff;
+    font-size:25px;
+    padding: 12px 36px;
+    margin-top:20px;
+    border-radius:16px;
+    border:2px solid #9B3D3D;
+    transition:.3s;
+}
+.home .home-content a:hover{
+    background:#9B3D3D;
+}
+/* gallerry */
+.gallery {
+    --n: 3; /* number of rows*/
+    --m: 4; /* number of columns */
+    --h: calc((100vh - (var(--n) - 1)*var(--g))/var(--n));
+    --w: calc((100vw - (var(--m) - 1)*var(--g))/var(--m)); 
+    --g: 10px;  /* control the gap */
+    --f: 1.5;   /* control the scale factor */
+    
+    display: grid;
+    gap: var(--g);
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(var(--m),auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--w)*var(--f));
+    height: calc(var(--h)*var(--f));
+  }
+
+  
+.about1 .section-title1{
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:30px;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+.about1 .section-title1::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:#9B3D3D;
+    transform:translateX(-50%);
+
+}
+.about1 .section-title1::after{
+    content: "Famous Books";
+    position:absolute;
+    bottom:-17px;
+    left:50%;
+    font-size:20px;
+    padding:5px;
+    color:#9B3D3D;
+    background:#fff;
+    transform:translateX(-50%);
+
+}
+
+  
+  
+
+/* gallery ends  */
+/*genres*/
+#genre{
+    background-color: #000000;
+    margin-top: 20px;
+}
+.about2 .section-title2{
+    color: white;
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:30px;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+.about2 .section-title2::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:black;
+    transform : translateX(-50%);
+
+}
+.about2 .section-title2::after{
+    content: "Lets explore book types";
+    position:absolute;
+    bottom:-17px;
+    left:50%;
+    font-size:20px;
+    padding:5px;
+    color:#9B3D3D;
+    transform:translateX(-50%);
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    color:#9B3D3D;
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+   
+/*genre end */
+/*best seller*/
+.about3 .section-title3{
+    color: black;
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:30px;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+.about3 .section-title3::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:white;
+    transform : translateX(-50%);
+
+}
+.about3 .section-title3::after{
+    content: "Some best book for you";
+    position:absolute;
+    bottom:-17px;
+    left:50%;
+    font-size:20px;
+    padding:5px;
+    color:#9B3D3D;
+    transform:translateX(-50%);
+
+}
+
+
+:root {
+  --spacing-medium: 1.6rem;
+  --spacing-small: calc(var(--spacing-medium) * 0.5);
+  --spacing-smedium: calc(var(--spacing-medium) * 0.707);
+  --spacing-large: calc(var(--spacing-medium) * 2);
+  --spacing-xlarge: calc(var(--spacing-medium) * 4);
+  --spacing-xxlarge: calc(var(--spacing-medium) * 8);
+  --box-size: var(--spacing-xxlarge);
+  --color-text: black;
+}
+
+.main-container {
+  /*box-sizing: border-box;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.45em;
+  background-color: #f0f0f0;
+  color: var(--color-text);
+  margin: var(--spacing-medium) var(--spacing-small);
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  background-color: #9b2335;
+  grid-gap: var(--spacing-smedium);
+  grid-template-columns: repeat(auto-fit, var(--box-size));
+  grid-auto-rows: var(--box-size);
+  grid-auto-flow: dense;
+  justify-content: center;
+  max-width: 91em;
+}
+
+.card {
+  grid-row: auto / span 1;
+  grid-column: auto / span 1;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(10, 10, 10, 0.06);
+}
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card p {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.card__image {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+}
+.card__image img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card__side-by-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.card__side-by-side--m {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card__side-by-side--m img {
+  min-height: auto;
+}
+.card__content {
+  padding: var(--spacing-medium);
+}
+.card__button {
+  margin: var(--spacing-medium) 0;
+  text-align: center;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background: none;
+  border: 0.5px solid black;
+  border-radius: 2px;
+}
+.card__button:hover {
+  border-color: #9B3D3D;
+  border: 2px solid #9B3D3D;
+  font-size: 20px;
+}
+.card--featured {
+  grid-row: auto / span 3;
+  grid-column: auto / span 2;
+}
+.card--2x {
+  grid-row: auto / span 2;
+  grid-column: auto / span 2;
+}
+.card--vertical {
+  grid-row: auto / span 2;
+}
+.card--horizontal {
+  grid-column: auto / span 2;
+}
+.card--frameless {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.padding-large {
+  padding: var(--spacing-large);
+}
+.padding-large--l {
+  padding: var(--spacing-medium);
+}
+
+.big-script {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sacramento', sans-serif;
+  font-size: 4.3em;
+  line-height: 1.15em;
+  text-align: center;
+}
+.big-script p {
+
+    font-family: "Dancing Script";
+  margin: 0;
+}
+
+@media (max-width: 413px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  .card {
+    min-height: var(--box-size);
+  }
+}
+
+@media (min-width: 627px) {
+  .grid-container {
+    background-color: #fff;
+    grid-gap: 10px;
+  }
+  .card__side-by-side--m {
+    flex-flow: row nowrap;
+  }
+  .card__side-by-side--m img {
+    min-height: 100%;
+  }
+  .card--featured {
+    grid-row: auto / span 2;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 836px) {
+  .padding-large--l {
+    padding: var(--spacing-large);
+  }
+}
+/* best seler ends*/
+
+/*testimonial*/
+.about4 .section-title4{
+    color: white;
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:30px;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+.about4 .section-title4::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:black;
+    transform : translateX(-50%);
+
+}
+.about4 .section-title4::after{
+    content: "Real stories, real results: Hear from our satisfied customers!";
+    position:absolute;
+    bottom:-17px;
+    left:50%;
+    font-size:20px;
+    padding:5px;
+    color:#9B3D3D;
+    transform:translateX(-50%);
+
+}
+
+
+.test {
+margin-left: 700px;
+  background-color: #212121;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border-top: 5px solid #9B3D3D;
+}
+
+.test *,
+.test *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.test figcaption {
+  padding: 13% 10% 12%;
+}
+
+.test figcaption:before {
+    
+  background: url(https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png);
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0);
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.test h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.test h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.test blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+/* end testi */
+
+
+
+.contact .section-title{
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom:60px;
+    padding-bottom:20px;
+}
+.contact .section-title::before{
+    content: "";
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    width:180px;
+    height:3px;
+    background:#9B3D3D;
+    transform:translateX(-50%);
+
+}
+.contact .section-title::after{
+    content: "Get in Touch";
+    position:absolute;
+    bottom:-17px;
+    left:50%;
+    font-size:20px;
+    padding:5px;
+    color:#9B3D3D;
+    background:#fff;
+    transform:translateX(-50%);
+
+}
+
+.contact .contact-content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+font-size:20px;
+font-weight:600;
+margin-bottom:10px;
+}
+.contact .contact-content .left p{
+text-align:justify;
+
+}
+.contact .contact-content .left .icons{
+    margin:10px 0;
+
+}
+.contact .contact-content .row{
+    display:flex;
+    height:65px;
+    align-items:center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:#9B3D3D;
+}
+.contact .contact-content .info .head{
+    font-weight:700;
+}
+.contact .contact-content .info  .sub-title{
+    color: #2f2f2f;
+}
+.contact .right form .fields{
+    display:flex;
+
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height:45px;
+    width:100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width:100%;
+
+}
+.contact .right form .name{
+    margin-right:10px;
+
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .field textarea{
+    height:100%;
+    width:100%;
+    border: 1px solid #9B3D3D;
+    border-radius: 6px;
+    outline:none;
+    padding: 0 15px;
+    font-size:17px;
+
+}
+.contact .right form .field textarea{
+    padding-top:10px;
+    resize:none;
+}
+.contact .right form .button{
+    height:47px;
+    width:170px;
+}
+.contact .right form .button button{
+    width:100%;
+    height:100%;
+    border:2px solid #9B3D3D;
+    background: #9B3D3D;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+.contact .right form .button button:hover{
+    color: #9B3D3D;
+    background:none;
+}
+/* Footer */
+
+.footer {
+ 
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 100px;
+  background-color:white;
+}
+
+.footer-text-left {
+  font-size:25px;
+  padding-left:40px;
+  float:left;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:#54BAB9;
+  font-size:20px;
+}
+
+.footer-content-right {
+  padding-right:40px;
+  margin-top:20px;
+  float:center;
+
+}
+
+.icon-style {
+float:left;
+  height:40px;
+  margin-left:20px;
+  margin-top:5px;
+    background: #f1f1f1;
+}
+
+.icon-style:hover {
+ background-color:#9B3D3D;
+  padding:5px;
+}
+
+#foottext{
+text-align:left;
+}
+footer{
+    margin-top: 40px;
+    background:#f1f1f1;
+    padding:50px 55px;
+    text-align:left;
+
+}
+footer span a{
+    color:#9B3D3D;
+    font-weight:700;
+}
+footer span a:hover{
+    text-decoration:underline;
+}
+/* Mobile Design*/
+@media all and (max-width: 1300px){
+    .home .max-width{
+        margin-left:0px;
+    }
+}
+@media all and (max-width: 1104px){
+   .about .about-content .left img{
+       height:350px;
+       width:350px;
+   }
+}
+@media all and (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+
+@media all and (max-width: 947px){
+    .max-width{
+        padding:0 50px;
+    }
+    .btn-menu{
+        display:block;
+        z-index:999;
+    }
+    .btn-menu i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position:fixed;
+        height:100vh;
+        width:100%;
+        background:#2f2f2f;
+        top:0;
+        left:-100%;
+        text-align:center;
+        padding-top:80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+
+    .navbar .menu li{
+        display:block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size:25px;
+    }
+    .home .home-content .text2{
+        font-size:40px;
+
+    }
+    .home .home-content .text3{
+        font-size:35px;
+        
+    }
+    .home .home-content a {
+        font-size:23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width:800px;
+       
+    }
+    .about .about-content .column{
+        width:100%;
+    }
+    .about .about-content .left{
+        display:flex;
+        justify-content:center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex:100%;
+    }
+    .service .content-service .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .teams{
+        height:80vh;
+    }
+    .contact .contact-content .column{
+        width:100%;
+        margin-bottom: 35px;
+    }
+
+}
+@media all and (max-width:690px){
+ 
+  
+    .home .home-content .text2{
+        font-size:60px;
+    }
+    .home .home-content .text3{
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size:20px;
+    }
+    .service .content-service .card{
+        width:100%;
+        
+    }
+
+
+}
+@media all and (max-width:768px){
+.main .gallery{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+}
+@media all and (max-width:500px){
+  
+    .home .home-content .text2{
+        font-size:50px;
+    }
+    .home .home-content .text3{
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width:430px){
+	.main .gallery{
+		display:grid;
+		grid-template-columns: auto auto;
+	}
+	.main .gallery .img{
+		display:block;
+		width:100%;
+		height:100%;
+		margin: 2% 0;
+	}
+	.main .gallery .img img{
+		display:block;
+		filter: brightness(1) grayscale(0);
+	}
+}
+.gall {
+  margin-left: 80px;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, serif;
+  font-size: 18px;
+  background: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 60px;
+}
+.gall:before, .gall:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 0 solid #fff;
+  border-width: 0 0 3px 3px;
+  transform: rotate(45deg);
+  left: 15px;
+  top: 11px;
+  border-radius: 2px;
+  opacity: 0.5;
+  animation: hide-s 2s ease 6s 1;
+  animation-fill-mode: forwards;
+}
+.gall:after {
+  left: inherit;
+  right: 15px;
+  transform: rotate(-135deg);
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 45px);
+  height: 36px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  line-height: 38px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: letter-s 2s ease 0s 3 alternate, hide-s 2s ease 6s 1;
+  animation-fill-mode: backwards, forwards;
+  opacity: 0.5;
+}
+.resizer:before, .resizer:after {
+  content: "";
+  position: absolute;
+  width: calc(50% - 125px);
+  border-bottom: 4px dotted #fff;
+  margin-left: 20px;
+  top: 18px;
+  left: 0;
+  animation: lines-s 2s ease 0s 3 alternate;
+}
+.resizer:after {
+  right: 15px;
+  left: inherit;
+  margin-right: 7px;
+}
+
+@keyframes letter-s {
+  0% {
+    letter-spacing: 8px;
+  }
+  100% {
+    letter-spacing: 1px;
+  }
+}
+@keyframes lines-s {
+  0% {
+    width: calc(50% - 175px);
+  }
+  100% {
+    width: calc(50% - 125px);
+  }
+}
+@keyframes hide-s {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+.item {
+  width: calc(236px - 20px);
+  height: calc(456px - 20px);
+  height: 50vh;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 2px 3px 1px #0006;
+}
+.item:before {
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 10px;
+  mix-blend-mode: exclusion;
+  border-radius: 15px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(110deg, #fffd, #fff0 20%, #fff0 70%, #fffd);
+  opacity: 1;
+  transition: opacity 0.65s ease 0s;
+  box-sizing: border-box;
+}
+.item:after {
+  content: "";
+  background-color: #fff9;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 5vmin;
+  box-shadow: 0 0 10vmin 2.5vmin #fff;
+  transform: skew(-20deg);
+  transition: all 0.25s ease;
+}
+.item:hover:before {
+  opacity: 0;
+  transition: opacity 0.65s ease 0s;
+}
+.item:hover:after {
+  left: 400px;
+  transition: left 0.5s ease 0s;
+}
+
+.item:nth-child(1) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/godfather-by-mario-puzo.jpeg.webp);
+}
+
+.item:nth-child(2) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/song-of-solomon-by-toni-morrison.jpeg.webp);
+}
+
+.item:nth-child(3) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/labyrinths-by-jorge-luis-borges.jpeg.webp);
+}
+
+.item:nth-child(4) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/flowers-in-the-attic-by-vc-andrews.jpeg.webp);
+}
+
+.item:nth-child(5) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/i-know-why-the-caged-bird-sings-by-maya-angelou.jpeg.webp);
+}
+
+.item:nth-child(6) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/the-hobbit-by-jrr-tolkein.jpg.webp);
+}
+
+.item:nth-child(7) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/invisible-man-by-ralph-ellison.jpeg.webp);
+}
+
+.item:nth-child(8) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/tender-is-the-storm-by-johanna-lindsey.jpeg.webp);
+}
+
+.item:nth-child(9) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2019/11/KNow_my_name_cover.jpg.webp);
+}
+
+.item:nth-child(10) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/jurassic-park-by-michael-crichton.jpeg.webp);
+}
+
+.item:nth-child(11) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/animorphs-by-ka-applegate.jpeg.webp);
+
+}
+
+.item:nth-child(12) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2019/02/mothers-The-Mothers-by-Brit-Bennett.jpeg.webp);
+}
+
+.item:nth-child(13) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/night-shift-by-stephen-king.jpeg.webp);
+}
+
+.item:nth-child(14) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2022/10/the-snowy-day-book-cover.jpg.webp);
+}
+
+.item:nth-child(15) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2018/04/a-little-life-cover.jpg.webp);
+}
+
+.item:nth-child(16) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/a-farewell-to-arms-by-ernest-hemingway.jpg.webp);
+}
+
+.item:nth-child(17) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2022/08/41D7oMcX9cL._SX327_BO1204203200_.jpg.webp);
+}
+
+.item:nth-child(18) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2019/08/this-is-how-you-lose-the-time-war-cover.jpg.webp);
+}
+
+.item:nth-child(19) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/face-of-an-angel-by-dorothy-eden-1.jpeg.webp);
+}
+
+.item:nth-child(20) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2019/04/Thick-and-Other-Essays-by-Tressie-McMillan-Cottom.jpg.webp);
+}
+
+.item:nth-child(21) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/frankenstein-by-mary-shelley.jpeg.webp);
+}
+
+.item:nth-child(22) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/crazy-rich-asians-by-kevin-kwan.jpeg.webp);
+}
+
+.item:nth-child(23) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/a-princess-of-mars-by-egdar-rice-burroughs.jpg.webp);
+}
+
+.item:nth-child(24) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2021/08/Shatter-Me-by-Tahereh-Mafi-New-Book-Cover.jpeg.webp);
+}
+
+.item:nth-child(25) {
+  background-image: url(https://s2982.pcdn.co/wp-content/uploads/2023/01/the-great-gatby-by-f-scott-fitzgerald.jpeg.webp);
+}
+
+.item:nth-child(26) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/01/ghost-wall-768x959.jpg);
+}
+
+.item:nth-child(27) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/01/Dh0N78JWAAItEWY.jpg);
+}
+
+.item:nth-child(28) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/91SGcvBluiL-683x1024.jpg);
+}
+
+.item:nth-child(29) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/81QwY3R3FVL-674x1024.jpg);
+}
+
+.item:nth-child(30) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/71QluMxBnsL-606x1024.jpg);
+}
+
+.item:nth-child(31) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/10/A1sLoZpVaoL-681x1024.jpg);
+}
+
+.item:nth-child(32) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/818VgJnkNAL.jpg);
+}
+
+.item:nth-child(33) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/03/91VPxoiKtHL.jpg);
+}
+
+.item:nth-child(34) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/81aDPmLZVpL-635x1024.jpg);
+}
+
+.item:nth-child(35) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/11/817BvbJMJBL.jpg);
+}
+
+.item:nth-child(36) {
+  background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/09/71wySuLKjcL-693x1024.jpg);
+}
+
+/*** Card Numbers ***/
+.item:nth-child(1):before {
+  content: "1";
+}
+
+.item:nth-child(2):before {
+  content: "2";
+}
+
+.item:nth-child(3):before {
+  content: "3";
+}
+
+.item:nth-child(4):before {
+  content: "4";
+}
+
+.item:nth-child(5):before {
+  content: "5";
+}
+
+.item:nth-child(6):before {
+  content: "6";
+}
+
+.item:nth-child(7):before {
+  content: "7";
+}
+
+.item:nth-child(8):before {
+  content: "8";
+}
+
+.item:nth-child(9):before {
+  content: "9";
+}
+
+.item:nth-child(10):before {
+  content: "10";
+}
+
+.item:nth-child(11):before {
+  content: "11";
+}
+
+.item:nth-child(12):before {
+  content: "12";
+}
+
+.item:nth-child(13):before {
+  content: "13";
+}
+
+.item:nth-child(14):before {
+  content: "14";
+}
+
+.item:nth-child(15):before {
+  content: "15";
+}
+
+.item:nth-child(16):before {
+  content: "16";
+}
+
+.item:nth-child(17):before {
+  content: "17";
+}
+
+.item:nth-child(18):before {
+  content: "18";
+}
+
+.item:nth-child(19):before {
+  content: "19";
+}
+
+.item:nth-child(20):before {
+  content: "20";
+}
+
+.item:nth-child(21):before {
+  content: "21";
+}
+
+.item:nth-child(22):before {
+  content: "22";
+}
+
+.item:nth-child(23):before {
+  content: "23";
+}
+
+.item:nth-child(24):before {
+  content: "24";
+}
+
+.item:nth-child(25):before {
+  content: "25";
+}
+
+.item:nth-child(26):before {
+  content: "26";
+}
+
+.item:nth-child(27):before {
+  content: "27";
+}
+
+.item:nth-child(28):before {
+  content: "28";
+}
+
+.item:nth-child(29):before {
+  content: "29";
+}
+
+.item:nth-child(30):before {
+  content: "30";
+}
+
+.item:nth-child(31):before {
+  content: "31";
+}
+
+.item:nth-child(32):before {
+  content: "32";
+}
+
+.item:nth-child(33):before {
+  content: "33";
+}
+
+.item:nth-child(34):before {
+  content: "34";
+}
+
+.item:nth-child(35):before {
+  content: "35";
+}
+
+.item:nth-child(36):before {
+  content: "36";
+}
+
+/*** Navigation ***/
+.pagination {
+  text-align: center;
+}
+.pagination ul {
+  padding: 0 0px;
+  margin: 10px 0 0;
+  background: #fff2;
+  border-radius: 10px;
+}
+.pagination ul li {
+  display: inline;
+  display: inline-flex;
+  margin: 5px;
+  color: #fff;
+}
+
+.pagination li a {
+  padding: 10px;
+  background: rgb(77, 77, 77);
+  color: var(--c2);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pagination li.page_link a:hover {
+  background: var(--c2);
+  color: #fff;
+}
+
+.pagination li.active_page a {
+  background: var(--c2);
+  color: white;
+}
+
+.pagination li > span {
+  font-weight: bold;
+  font-size: 15px;
+  top: -4px;
+  position: relative;
+}
+
+.pagination li a span {
+  min-width: 20px;
+  display: inline-block;
+}
+
+.pagination li.page_link.active_page.active a {
+  cursor: default;
+}
+
+li.previous_link a, li.next_link a,
+li.first_link a, li.last_link a {
+  background: #fff0;
+  /* border: 2px solid #fff; */
+  color: #fff0;
+  display: block;
+  padding: 10px 12px;
+}
+
+li.previous_link a:before, li.next_link a:before,
+li.first_link a:before, li.last_link a:before {
+  content: "";
+  border: 2px solid #fff;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  border-width: 3px 0 0 3px;
+  transform: rotate(-45deg);
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 2px;
+}
+
+li.next_link a:before,
+li.last_link a:before {
+  transform: rotate(135deg);
+  margin-left: -3px;
+}
+
+li.first_link a:before, li.last_link a:before {
+  filter: drop-shadow(5px 5px 0 #fff);
+  margin-left: 0px;
+}
+
+li.previous_link a:hover, li.next_link a:hover,
+li.first_link a:hover, li.last_link a:hover {
+  background: var(--c2);
+  border-color: var(--c2);
+}
+
+li.no_more.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+li.page_link.first.active_page.active a {
+  cursor: default;
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  .pagination ul {
+    margin-top: 20px;
+  }
+
+  .resizer {
+    top: 5px;
+  }
+
+  .gall:before, .gall:after {
+    top: 16px;
+  }
+}
+.about8 .section-title8{
+  color: white;
+  position:relative;
+  text-align:center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom:30px;
+  margin-top: 10px;
+  padding-bottom:20px;
+}
+.about8.section-title8::before{
+  content: "";
+  position:absolute;
+  bottom:0px;
+  left:50%;
+  width:180px;
+  height:3px;
+  background:black;
+  transform : translateX(-50%);
+
+}
+.about8 .section-title8::after{
+  content: "Exclusively for YOU!!";
+  position:absolute;
+  bottom:-17px;
+  left:50%;
+  font-size:20px;
+  padding:5px;
+  color:#9B3D3D;
+  transform:translateX(-50%);
+
+}
